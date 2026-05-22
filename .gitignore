@@ -1,0 +1,9 @@
+# Tree-sitter grammars are compiled by Zed at install time, not committed.
+grammars/
+*.wasm
+
+# Editor / OS noise
+.DS_Store
+
+# Local Claude Code settings (machine-specific)
+.claude/settings.local.json

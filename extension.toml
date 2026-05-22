@@ -1,0 +1,14 @@
+id = "fhir-shorthand"
+name = "FHIR Shorthand"
+description = "FHIR Shorthand (FSH) language support for Zed: syntax highlighting, bracket matching, and code outline for .fsh files."
+version = "0.1.0"
+schema_version = 1
+authors = ["Sergej Suskov <sergej.suskov@gmail.com>"]
+repository = "https://github.com/spilikin/zed-fhir-shorthand"
+
+# The Tree-sitter grammar is fetched and compiled by Zed at install time.
+# It is NOT vendored here. The .scm query files in languages/fsh/ are written
+# against the node names of this exact `rev` — bump them together.
+[grammars.fsh]
+repository = "https://github.com/mgramigna/tree-sitter-fsh"
+rev = "fad2e175099a45efbc98f000cc196d3674cc45e0"

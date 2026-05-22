@@ -1,0 +1,13 @@
+name = "FSH"
+grammar = "fsh"
+path_suffixes = ["fsh"]
+line_comments = ["// "]
+block_comment = ["/* ", " */"]
+autoclose_before = ";:.,=)]>"
+
+# FSH has no curly-brace constructs — only parentheses and square brackets.
+brackets = [
+  { start = "(", end = ")", close = true, newline = false },
+  { start = "[", end = "]", close = true, newline = false },
+  { start = "\"", end = "\"", close = true, newline = false, not_in = ["string", "comment"] },
+]
