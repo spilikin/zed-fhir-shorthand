@@ -1,6 +1,12 @@
 name = "FSH"
 grammar = "fsh"
 path_suffixes = ["fsh"]
+
+# FSH derives a rule's path context from indentation; SUSHI requires increments
+# of exactly 2 spaces, so force 2-space soft tabs regardless of editor defaults.
+tab_size = 2
+hard_tabs = false
+
 line_comments = ["// "]
 block_comment = ["/* ", " */"]
 autoclose_before = ";:.,=)]>"

@@ -7,3 +7,6 @@ grammars/
 
 # Local Claude Code settings (machine-specific)
 .claude/settings.local.json
+
+# Personal publishing reference (local notes, not for distribution)
+/PUBLISHING.md
