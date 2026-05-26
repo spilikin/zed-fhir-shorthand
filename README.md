@@ -8,12 +8,12 @@ Implementation Guide artifacts.
 ## Features
 
 - Syntax highlighting for `.fsh` files
-- Bracket matching and auto-close
 - Code outline (Profiles, Extensions, Instances, ValueSets, CodeSystems, …)
 
 It is a **grammar-only** extension: highlighting and outline come from a
-[Tree-sitter grammar](https://github.com/mgramigna/tree-sitter-fsh). There is no
-language server yet, so live diagnostics and completion are not provided — run
+purpose-built [Tree-sitter grammar](../tree-sitter-fsh) — a port of SUSHI's
+official ANTLR grammar for FSH 3.0.0. There is no language server yet, so live
+diagnostics and completion are not provided — run
 [SUSHI](https://github.com/FHIR/sushi) (`fsh-sushi`) for compilation and error
 checking.
 

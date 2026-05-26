@@ -1,50 +1,14 @@
 ; Code outline (symbol list) for FSH definitions.
-; Captures: @item = whole entity, @name = symbol name, @context = entity keyword.
+; @item = whole entity, @name = symbol name, @context = entity keyword.
 
-(alias
-  "Alias" @context
-  (alias_name) @name) @item
-
-(profile
-  "Profile" @context
-  (name) @name) @item
-
-(extension
-  "Extension" @context
-  (name) @name) @item
-
-(invariant
-  "Invariant" @context
-  (name) @name) @item
-
-(instance
-  "Instance" @context
-  (name) @name) @item
-
-(valueset
-  "ValueSet" @context
-  (name) @name) @item
-
-(codesystem
-  "CodeSystem" @context
-  (name) @name) @item
-
-(mapping
-  "Mapping" @context
-  (name) @name) @item
-
-(logical
-  "Logical" @context
-  (name) @name) @item
-
-(resource
-  "Resource" @context
-  (name) @name) @item
-
-(rule_set
-  "RuleSet" @context
-  (rule_set_reference) @name) @item
-
-(param_rule_set
-  "RuleSet" @context
-  (param_rule_set_reference) @name) @item
+(alias       "Alias:" @context       name: (name) @name) @item
+(profile     "Profile:" @context     name: (name) @name) @item
+(extension   "Extension:" @context   name: (name) @name) @item
+(logical     "Logical:" @context     name: (name) @name) @item
+(resource    "Resource:" @context    name: (name) @name) @item
+(instance    "Instance:" @context    name: (name) @name) @item
+(invariant   "Invariant:" @context   name: (name) @name) @item
+(value_set   "ValueSet:" @context    name: (name) @name) @item
+(code_system "CodeSystem:" @context  name: (name) @name) @item
+(mapping     "Mapping:" @context     name: (name) @name) @item
+(rule_set    "RuleSet:" @context     name: (ruleset_reference) @name) @item
